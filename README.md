@@ -13,3 +13,6 @@ The algorithm takes as input a parity check matrix, computes its adjacency matri
 2. that number will be the weight of the edge that connects the corresponding nodes, i.e.
 if column _i_ shares _w_ positions with column _j_, the _(i,j)_-th and the _(j,i)_-th element of 
 the adjacency matrix will be equal to _w_.
+3. The _(i,i)_-th elements of the adjacency matrix will be 0.
+
+Then, the adjacency matrix is the input for MEWC algorithm, that will find a clique of maximum edge weight in the matrix.
